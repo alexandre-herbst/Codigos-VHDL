@@ -1,0 +1,88 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+----------------------------------------------------------
+ENTITY fig11_1 IS
+PORT (
+clk, rst : IN STD_LOGIC;
+G : IN integer range 0 to 2;
+l1_vd, l2_vm, l1_am, l2_vd, l1_vm, l2_am : OUT std_LOGIC);
+END entity;
+----------------------------------------------------------
+ARCHITECTURE v1 OF fig11_1 IS
+TYPE state IS (vd1, am1, vm1, vd2, am2, vm2);
+SIGNAL pr_state, nx_state : state;
+--ATTRIBUTE ENUM_ENCODING : STRING; --optional attribute
+--ATTRIBUTE ENUM_ENCODING OF state : TYPE IS "sequential";
+BEGIN
+------Logica Sequencial da FSM:------------
+PROCESS (clk, rst)
+BEGIN
+IF (rst = '1') THEN
+pr_state <= vd1;
+ELSIF (clk'EVENT AND clk = '1') THEN
+pr_state <= nx_state;
+END IF;
+END PROCESS;
+------Logica Combinacional da FSM:------------
+PROCESS (pr_state, G)
+BEGIN
+--valor default das saidas
+y<= '0';
+l1_vd <= 0;
+l1_am <= 0;
+l1_vm <= 0;
+l2_vd <= 0;
+l2_am <= 0;
+l2_vm <= 0;
+
+CASE pr_state IS
+	WHEN vd1 =>
+		l1_vd = 1;
+		l2_am = 1;
+		IF (G = 1) THEN
+			nx_state <= am1;
+		ELSE
+		END IF;
+	
+	WHEN am1 =>
+		l1_am = 1;
+		l2_vm = 1;
+		IF (G = 1) THEN
+			nx_state <= vm1;
+		ELSE
+		END IF;
+		
+	WHEN vm1 =>
+		l1_vm = 1;
+		l2_vm = 1;
+		IF (G =1) THEN	
+			nx_state <= vd2;
+		ELSE
+		END IF;
+	WHEN vd2 =>
+		l1_vm = 1;
+		l2_vd = 1;
+		IF (G =1) THEN	
+			nx_state <= am2;
+		ELSE
+		END IF;
+		
+	WHEN am2 =>
+		l1_vm = 1;
+		l2_am = 1;
+		IF (G =1) THEN	
+			nx_state <= vm2;
+		ELSE
+		END IF;
+		
+		WHEN vm2 =>
+		l1_vm = 1;
+		l2_vm = 1;
+		IF (G =1) THEN	
+			nx_state <= vd2;
+		ELSE
+		END IF;
+END CASE;
+END PROCESS;
+
+END architecture;

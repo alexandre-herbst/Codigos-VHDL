@@ -1,0 +1,219 @@
+# do maquina_verder_doces_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ae/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/rafael.te/estudandoP2/CandyMachine/maquina_verder_doces.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity maquina_verder_doces
+# -- Compiling architecture ifsc of maquina_verder_doces
+# 
+vsim work.maquina_verder_doces
+# vsim work.maquina_verder_doces 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 Linux 4.15.18-14-pve
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.maquina_verder_doces(ifsc)
+add wave -position insertpoint sim:/maquina_verder_doces/*
+force -freeze sim:/maquina_verder_doces/clk 1 0, 0 {500000000000 ps} -r 1sec
+force -freeze sim:/maquina_verder_doces/rst 1 0
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+force -freeze sim:/maquina_verder_doces/rst 0 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+force -freeze sim:/maquina_verder_doces/pag10 0 0
+force -freeze sim:/maquina_verder_doces/pag25 0 0
+force -freeze sim:/maquina_verder_doces/prod 0 0
+force -freeze sim:/maquina_verder_doces/dev5 0 0
+force -freeze sim:/maquina_verder_doces/dev10 0 0
+run 1sec
+
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag10 1 0
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+force -freeze sim:/maquina_verder_doces/pag10 0 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pr_state ST0 0
+force -freeze sim:/maquina_verder_doces/nx_state ST0 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/nx_state ST0 0
+noforce sim:/maquina_verder_doces/pr_state
+noforce sim:/maquina_verder_doces/nx_state
+force -freeze sim:/maquina_verder_doces/rst 1 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+force -freeze sim:/maquina_verder_doces/rst 0 0
+force -freeze sim:/maquina_verder_doces/rst 0 0
+force -freeze sim:/maquina_verder_doces/rst 0 0
+run 1sec
+run 1sec
+run 1sec
+run 1sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+force -freeze sim:/maquina_verder_doces/pag10 1 0
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag10 0 0
+force -freeze sim:/maquina_verder_doces/pag25 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag25 0 0
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+noforce sim:/maquina_verder_doces/dev5
+noforce sim:/maquina_verder_doces/dev10
+noforce sim:/maquina_verder_doces/pr_state
+noforce sim:/maquina_verder_doces/nx_state
+noforce sim:/maquina_verder_doces/prod
+force -freeze sim:/maquina_verder_doces/rst 1 0
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag5 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag5 0 0
+force -freeze sim:/maquina_verder_doces/pag10 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag10 0 0
+force -freeze sim:/maquina_verder_doces/pag25 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/pag25 0 0
+run 1 sec
+run 1 sec
+run 1 sec
+run 1 sec
+force -freeze sim:/maquina_verder_doces/rst 1 0
+run 1 sec
+force -freeze sim:/maquina_verder_doces/rst 0 0
+run 1 sec

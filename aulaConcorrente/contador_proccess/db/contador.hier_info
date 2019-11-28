@@ -1,0 +1,12 @@
+|contador
+clk => \L01:contar[0].CLK
+clk => \L01:contar[1].CLK
+clk => \L01:contar[2].CLK
+rst_a => \L01:contar[0].ACLR
+rst_a => \L01:contar[1].ACLR
+rst_a => \L01:contar[2].ACLR
+conta_s[0] <= \L01:contar[0].DB_MAX_OUTPUT_PORT_TYPE
+conta_s[1] <= \L01:contar[1].DB_MAX_OUTPUT_PORT_TYPE
+conta_s[2] <= \L01:contar[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,62 @@
+library ieee;
+use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+----------------------------------------------------------
+entity maquina_vender_doces is
+	port(
+		clk  : in  std_logic;
+		rst  : in  std_logic;
+		pag5 : in  std_logic;
+		pag10: in  std_logic;
+		pag25: in  std_logic;
+		prod : out std_logic;
+		dev5 : out std_logic;
+		dev10: out std_logic
+	);
+end maquina_vender_doces;
+----------------------------------------------------------
+architecture ifsc of maquina_vender_doces is
+	type state is (ST0, ST5, ST10, ST15, ST20, ST25, ST30, ST35, ST40, ST45);
+	signal pr_state, nx_state : state;
+begin
+	------Logica Sequencial da FSM:------------
+	process (clk, rst)
+	begin
+		if (rst = '1') then
+			pr_state <= ST0;
+		elsif (clk'EVENT and clk = '1') then
+			pr_state <= nx_state;
+		end if;
+	end process;
+	------Logica Combinacional da FSM:------------
+	process (pr_state, x)
+	begin
+			prod  <= '0';
+			dev5  <= '0';
+			dev10 <= '0';
+			
+			case pr_state is
+				when ST0 => 
+					if pag5 = '1' then
+						nx_state <= ST5;
+					else
+						nx_state <= A;
+					end if;
+				when B => 
+					if (x = 0) then
+						nx_state <= C;
+					elsif(x = 1) then
+						nx_state <= A;
+					else
+						nx_state <= B;
+					end if;
+				when c =>
+					y <= '1';
+					if (x = 1) then
+						nx_state <= A;
+					else 
+						nx_state <= C;
+					end if;
+			end case;
+		end process;
+end ifsc ;

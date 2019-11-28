@@ -1,0 +1,15 @@
+
+State Machine - |semaforo_v1|pr_state
+Name pr_state.vm2b pr_state.am2b pr_state.vd2b pr_state.vm1b pr_state.am1b pr_state.vd1b pr_state.vm2 pr_state.am2 pr_state.vd2 pr_state.vd1 pr_state.am1 pr_state.vm1 
+pr_state.vm1 0 0 0 0 0 0 0 0 0 0 0 0 
+pr_state.am1 0 0 0 0 0 0 0 0 0 0 1 1 
+pr_state.vd1 0 0 0 0 0 0 0 0 0 1 0 1 
+pr_state.vd2 0 0 0 0 0 0 0 0 1 0 0 1 
+pr_state.am2 0 0 0 0 0 0 0 1 0 0 0 1 
+pr_state.vm2 0 0 0 0 0 0 1 0 0 0 0 1 
+pr_state.vd1b 0 0 0 0 0 1 0 0 0 0 0 1 
+pr_state.am1b 0 0 0 0 1 0 0 0 0 0 0 1 
+pr_state.vm1b 0 0 0 1 0 0 0 0 0 0 0 1 
+pr_state.vd2b 0 0 1 0 0 0 0 0 0 0 0 1 
+pr_state.am2b 0 1 0 0 0 0 0 0 0 0 0 1 
+pr_state.vm2b 1 0 0 0 0 0 0 0 0 0 0 1 

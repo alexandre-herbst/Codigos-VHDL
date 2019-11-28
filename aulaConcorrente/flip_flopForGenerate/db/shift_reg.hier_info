@@ -1,0 +1,16 @@
+|serial2par
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+rst => q[0].ACLR
+rst => q[1].ACLR
+rst => q[2].ACLR
+rst => q[3].ACLR
+din => q[0].DATAIN
+qout[3] <= q[0].DB_MAX_OUTPUT_PORT_TYPE
+qout[2] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
+qout[1] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
+qout[0] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

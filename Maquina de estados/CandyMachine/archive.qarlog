@@ -1,0 +1,16 @@
+Quartus II Archive log --	/home/rafael.te/estudandoP2/CandyMachine/archive.qarlog
+
+Archive:	/home/rafael.te/estudandoP2/CandyMachine/archive.qar
+Date:		Thu Jun 13 22:20:15 2019
+Quartus II 32-bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+
+	=========== Files Selected: ===========
+/home/rafael.te/estudandoP2/CandyMachine/incremental_db/compiled_partitions/maquina_verder_doces.db_info
+/home/rafael.te/estudandoP2/CandyMachine/maquina_verder_doces.qpf
+/home/rafael.te/estudandoP2/CandyMachine/maquina_verder_doces.qsf
+/home/rafael.te/estudandoP2/CandyMachine/maquina_verder_doces.vhd
+/opt/altera/13.0sp1/quartus/linux/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

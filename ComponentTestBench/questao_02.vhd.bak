@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity questao_02 is
+	generic(N : natural := 4);
+	port
+	(
+		-- Input ports
+		a_in, b_in, c_in, d_in	: in  std_logic_vector(N-1 downto 0);
+		sel_in : in std_logic_vector(1 downto 0); 
+		rst_in, clk_in : in  std_logic;
+		reg_out, mux_out	: out std_logic_vector
+	);
+end questao_02;
+
+architecture andre01 of questao_02 is
+
+begin
+	process(clk, rst)
+	begin
+			if rst = '1' then 
+				y <= (others => '0');
+			elsif rising_edge(clk) then
+				y <= x;
+		end if;
+	end process;
+end architecture;

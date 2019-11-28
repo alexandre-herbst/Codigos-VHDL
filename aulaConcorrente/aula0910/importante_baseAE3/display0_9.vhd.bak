@@ -1,0 +1,34 @@
+library IEEE;
+use std_logic_1164.all; 
+
+entity display0_9 is
+	-- generic(<name>	: <type>  :=	<default_value>);
+	port
+	(	-- Input ports
+		clk, rst	: in  std_logic;
+		ssd_out	: out  std_logic; --(6 downto 0)
+	);
+end display0_9;
+
+-- Library Clause(s) (optional)
+-- Use Clause(s) (optional)
+
+architecture andre01 of display0_9 is
+
+	--signal count : srv(3 downto 0);
+
+begin
+contar:
+	process (rst, clk) is
+	variable count : integer range 0 to 9;
+	begin
+	if (rst = '1') then
+		count := 0; --variavel
+	elsif (rising_edge(clk)) then	
+		if count = 9 then	
+		--if count > 8 then    -se quiser otimizar o circuito
+			count := 0
+		else count <= count + 1;
+		end if;
+	end process;
+end architecture;

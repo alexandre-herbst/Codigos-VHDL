@@ -1,0 +1,70 @@
+|timer0_9H
+clk_1sec => conta_up:C2.clk
+rst => conta_up:C2.rst
+ssd_out[0] <= bin2ssd:C1.ssd[0]
+ssd_out[1] <= bin2ssd:C1.ssd[1]
+ssd_out[2] <= bin2ssd:C1.ssd[2]
+ssd_out[3] <= bin2ssd:C1.ssd[3]
+ssd_out[4] <= bin2ssd:C1.ssd[4]
+ssd_out[5] <= bin2ssd:C1.ssd[5]
+ssd_out[6] <= bin2ssd:C1.ssd[6]
+
+
+|timer0_9H|bin2ssd:C1
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+tipo => ssd.OUTPUTSELECT
+bin[0] => Mux0.IN19
+bin[0] => Mux1.IN19
+bin[0] => Mux2.IN10
+bin[0] => Mux3.IN19
+bin[0] => Mux4.IN10
+bin[0] => Mux5.IN10
+bin[0] => Mux6.IN19
+bin[1] => Mux0.IN18
+bin[1] => Mux1.IN18
+bin[1] => Mux2.IN9
+bin[1] => Mux3.IN18
+bin[1] => Mux4.IN9
+bin[1] => Mux5.IN9
+bin[1] => Mux6.IN18
+bin[2] => Mux0.IN17
+bin[2] => Mux1.IN17
+bin[2] => Mux2.IN8
+bin[2] => Mux3.IN17
+bin[2] => Mux4.IN8
+bin[2] => Mux5.IN8
+bin[2] => Mux6.IN17
+bin[3] => Mux0.IN16
+bin[3] => Mux1.IN16
+bin[3] => Mux3.IN16
+bin[3] => Mux6.IN16
+ssd[0] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[1] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[2] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[3] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[4] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[5] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+ssd[6] <= ssd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timer0_9H|conta_up:C2
+rst => count[0].ACLR
+rst => count[1].ACLR
+rst => count[2].ACLR
+rst => count[3].ACLR
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk_out <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

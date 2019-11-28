@@ -1,0 +1,16 @@
+Quartus II Archive log --	/home/aluno/cont_ssd/cont_ssd.qarlog
+
+Archive:	/home/aluno/cont_ssd/cont_ssd.qar
+Date:		Thu May  9 16:04:14 2019
+Quartus II 32-bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+
+	=========== Files Selected: ===========
+/home/aluno/cont_ssd/cont_ssd.qpf
+/home/aluno/cont_ssd/cont_ssd.qsf
+/home/aluno/cont_ssd/cont_ssd.vhd
+/home/aluno/cont_ssd/incremental_db/compiled_partitions/cont_ssd.db_info
+/opt/altera/13.0sp1/quartus/linux/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

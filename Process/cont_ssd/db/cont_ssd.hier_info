@@ -1,0 +1,16 @@
+|div_clk
+clk_in => clk_t.CLK
+clk_in => cnt[0].CLK
+clk_in => cnt[1].CLK
+clk_in => cnt[2].CLK
+clk_in => cnt[3].CLK
+clk_in => cnt[4].CLK
+rst => clk_t.PRESET
+rst => cnt[0].ACLR
+rst => cnt[1].ACLR
+rst => cnt[2].ACLR
+rst => cnt[3].ACLR
+rst => cnt[4].ACLR
+clk_out <= clk_t.DB_MAX_OUTPUT_PORT_TYPE
+
+

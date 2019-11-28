@@ -1,0 +1,21 @@
+|maquina_verder_doces
+clk => pr_state~1.DATAIN
+rst => pr_state~3.DATAIN
+pag5 => nx_state.OUTPUTSELECT
+pag5 => nx_state.OUTPUTSELECT
+pag5 => nx_state.OUTPUTSELECT
+pag5 => Selector1.IN3
+pag5 => Selector2.IN4
+pag5 => Selector3.IN4
+pag5 => Selector4.IN4
+pag5 => Selector5.IN6
+pag10 => nx_state.OUTPUTSELECT
+pag10 => nx_state.OUTPUTSELECT
+pag10 => nx_state.DATAA
+pag25 => nx_state.DATAA
+pag25 => nx_state.DATAA
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+dev5 <= dev5.DB_MAX_OUTPUT_PORT_TYPE
+dev10 <= dev10.DB_MAX_OUTPUT_PORT_TYPE
+
+

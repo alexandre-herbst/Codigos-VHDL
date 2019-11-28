@@ -1,0 +1,22 @@
+|display0_9
+clk => \contar:count[0].CLK
+clk => \contar:count[1].CLK
+clk => \contar:count[2].CLK
+clk => \contar:count[3].CLK
+rst => \contar:count[0].ACLR
+rst => \contar:count[1].ACLR
+rst => \contar:count[2].ACLR
+rst => \contar:count[3].ACLR
+LED[0] <= \contar:count[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= \contar:count[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= \contar:count[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= \contar:count[3].DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ssd_out2[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

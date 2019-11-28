@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/alisson.b11/aula34_2/simulation/modelsim
+Esemaforo_v1
+Z1 w1558638200
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/alisson.b11/aula34_2/simulation/modelsim
+Z5 8/home/alisson.b11/aula34_2/semaforo_v1.vhd
+Z6 F/home/alisson.b11/aula34_2/semaforo_v1.vhd
+l0
+L4
+VzTSnKYm>UX837OmDW7F]52
+!s100 n1idO4XdC[JP@6JUf@TK10
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1558639665.983112
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/alisson.b11/aula34_2/semaforo_v1.vhd|
+Z10 !s107 /home/alisson.b11/aula34_2/semaforo_v1.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Av1
+R2
+R3
+Z13 DEx4 work 11 semaforo_v1 0 22 zTSnKYm>UX837OmDW7F]52
+l16
+L11
+Z14 VlG=GS`=gjN7OZ?HZIUani2
+Z15 !s100 4X5Wc=@V7@ddS^6QX9U=B3
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
